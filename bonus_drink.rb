@@ -11,8 +11,3 @@ class BonusDrink
 
   end
 
-puts "飲み物の購入本数を入力してください"
-amount = 100
-self.total_count_for(amount)
-
-end
