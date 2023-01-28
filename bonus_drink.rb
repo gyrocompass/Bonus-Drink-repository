@@ -1,13 +1,20 @@
 class BonusDrink
   def self.total_count_for(amount)
-    return 0 if amount.zero?
-
-    case amount % 2
-    when 0
-      3 * (amount - 2) / 2 + 2
-    when 1
-      3 * (amount - 1) / 2 + 1
+    bottles = amount
+    while bottles >= 3
+      bonus = bottles / 3
+      amount += bonus
+      bottles = bottles % 3 + bonus
     end
-  end
-end
 
+    puts "トータルで飲める本数は#{amount}です。"
+    
+    reurn amount
+
+  end
+
+puts "飲み物の購入本数を入力してください"
+amount = gets.to_i
+self.total_count_for(amount)
+
+end
