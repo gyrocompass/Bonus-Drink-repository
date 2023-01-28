@@ -10,5 +10,4 @@ class BonusDrink
     puts "トータルで飲める本数は#{amount}です。"
 
   end
-
-end
+return
