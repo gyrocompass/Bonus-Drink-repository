@@ -11,7 +11,4 @@ class BonusDrink
 
   end
 
-amount = 30
-self.total_count_for(amount)
-
 end
